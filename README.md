@@ -19,6 +19,8 @@ KAIM_WEEK_8_N_9
 │ └── processed/ # Processed/cleaned data (gitignored)
 ├── notebooks/
 │ └── README.md # Documentation for notebooks
+│ └── 1_Fraud_Data_EDA_FeatureEng.ipynb # EDA, Featuring Eng for fraud data
+│ └── 1.1_Credit_card_EDA.ipynb # EDA for credit card data
 ├── scripts/
 │ └── README.md # Documentation for scripts
 ├── src/
@@ -48,6 +50,10 @@ SHAP for feature importance and interpretability
 ---
 
 ## Key Tasks Completed
+
+### ✅ Task 1 - Data Analysis and Preprocessing
+
+Processed Fraud_Data.csv and credit_card_data.csv for fraud detection. For Fraud_Data, handled missing country values post-IP merge, cleaned duplicates, converted timestamps to datetime, performed EDA (univariate and bivariate analyses), engineered features (transaction frequency, velocity, time-based), addressed class imbalance with SMOTE, scaled numerical features, and encoded categorical variables. For credit_card_data, conducted EDA to visualize severe class imbalance (99.83% non-fraud, 0.17% fraud) using log-scale count plot, confirming need for SMOTE. Data stored in processed format for modeling.
 
 ---
 ## Setup Instructions
