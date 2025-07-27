@@ -18,3 +18,18 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Loaded credit_card_data.csv for credit card fraud detection
 - Performed EDA to analyze class distribution, confirming severe imbalance (99.83% non-fraud, 0.17% fraud) with log-scale count plot
 - Highlighted need for SMOTE to address class imbalance in subsequent modeling steps
+
+## 2_Model_Building_Summary.ipynb
+
+- Loaded Fraud_Data.csv and creditcard.csv
+- Preprocessed Fraud_Data: converted datetime columns to numeric (hour, day, month), encoded categorical features with LabelEncoder
+- Ensured numeric features for modeling
+- Performed 80-20 stratified train-test split on class (Fraud_Data) and Class (creditcard)
+- Trained and compared:
+    - Logistic Regression: Interpretable baseline
+    - Random Forest: Ensemble model for complex patterns
+- Evaluated with AUC-PR, F1-Score, and Confusion Matrix
+- Visualized results with confusion matrix heatmaps
+- Selected Random Forest as best model for higher AUC-PR, F1-Score, and robust performance
+- Saved Random Forest models as fraud_data_rf_model.pkl and creditcard_rf_model.pkl in ../models/
+- Stored results for Task 3 analysis
