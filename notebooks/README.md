@@ -33,3 +33,13 @@ This folder contains Jupyter notebooks illustrating the process of data ingestio
 - Selected Random Forest as best model for higher AUC-PR, F1-Score, and robust performance
 - Saved Random Forest models as fraud_data_rf_model.pkl and creditcard_rf_model.pkl in ../models/
 - Stored results for Task 3 analysis
+
+## 3_model_explanability.ipynb
+
+- SHAP Analysis on trained Random Forest models:
+    - Generated global (summary plots) and local (force plots) explanations.
+    - Key fraud indicators: purchase_value (Fraud_Data), V14 (CreditCard).
+- Outputs Saved:
+    - SHAP values (../shap_values/).
+    - Visualizations (../plots/): feature importance, decision breakdowns.
+- Insights: Models prioritize transaction velocity (Fraud_Data) and PCA features (CreditCard).
