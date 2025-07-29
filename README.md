@@ -60,6 +60,9 @@ Processed Fraud_Data.csv and credit_card_data.csv for fraud detection. For Fraud
 
 Trained and evaluated models on preprocessed Fraud_Data.csv and creditcard.csv for fraud detection, using stratified 80-20 train-test splits on class (Fraud_Data) and Class (creditcard) targets. Preprocessed Fraud_Data by converting datetime columns to numeric features (hour, day, month) and encoding categorical variables with LabelEncoder. Trained Logistic Regression and Random Forest models, evaluated with AUC-PR, F1-Score, and Confusion Matrix, visualized via heatmaps. Random Forest outperformed Logistic Regression (AUC-PR: 0.6207 vs. 0.3527 for Fraud_Data; 0.8042 vs. 0.6297 for creditcard) and was saved as fraud_data_rf_model.pkl and creditcard_rf_model.pkl in ../models/ for future use, with results stored for Task 3 analysis.
 
+### ✅ Task 3 - Model Explainability Analysis
+Leveraged SHAP to interpret our fraud detection models, generating global feature importance plots and local prediction explanations. For Fraud_Data, transaction patterns like max_purchase_velocity emerged as key fraud signals, while PCA components (V14, V12) proved most significant for creditcard transactions. Saved SHAP values and visualizations (summary plots, force plots) to ../plots/, demonstrating our models detect fraud through logical, explainable patterns. This analysis validates model reliability by aligning detection logic with known fraud indicators.
+
 ---
 ## Setup Instructions
 
