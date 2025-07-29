@@ -22,6 +22,7 @@ KAIM_WEEK_8_N_9
 │ └── 1_Fraud_Data_EDA_FeatureEng.ipynb # EDA, Featuring Eng for fraud data
 │ └── 1.1_Credit_card_EDA.ipynb # EDA for credit card data
 │ └── 2_model_training.ipynb # model training
+│ └── 3_model_explanability.ipynb # model explanability
 ├── scripts/
 │ └── README.md # Documentation for scripts
 ├── src/
